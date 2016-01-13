@@ -7,6 +7,6 @@ import generic.Vertex;
  */
 public class VertexMilestone extends Vertex<String, PERTVertexValues> {
     
- 
+
     
 }
