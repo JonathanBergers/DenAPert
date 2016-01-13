@@ -1,5 +1,6 @@
 package generic;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,8 +8,8 @@ import java.util.List;
  */
 public abstract class GenericGraph<E extends Edge, V extends Vertex> {
 
-    List<V> vertices;
-    List<E> edges;
+    protected List<V> vertices = new ArrayList<V>();
+    protected List<E> edges = new ArrayList<E>();
 
 
 }
