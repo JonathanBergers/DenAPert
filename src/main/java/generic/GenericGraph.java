@@ -7,8 +7,8 @@ import java.util.List;
  */
 public abstract class GenericGraph<E extends Edge, V extends Vertex> {
 
-    List<V> vertices;
-    List<E> edges;
+    protected List<V> vertices;
+    protected List<E> edges;
 
 
 }

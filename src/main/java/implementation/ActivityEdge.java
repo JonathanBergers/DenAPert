@@ -10,7 +10,11 @@ import javafx.util.Pair;
 public class ActivityEdge extends Edge<String, VertexMilestone> {
 
 
+    public ActivityEdge(String value, VertexMilestone from, VertexMilestone to) {
+        super(value, from, to);
 
+
+    }
 
 
 

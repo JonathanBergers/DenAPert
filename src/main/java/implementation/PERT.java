@@ -12,12 +12,8 @@ import java.util.List;
 public class PERT extends GenericGraph<ActivityEdge, VertexMilestone> {
 
 
-
-
-
-
-
-
+    public PERT() {
+    }
 
     void transform(){
 

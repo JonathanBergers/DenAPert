@@ -5,8 +5,13 @@ package generic;
  */
 public abstract class Edge<T, V extends Vertex> {
 
-    T value;
-    V from , to;
+    protected T value;
+    protected V from , to;
 
 
+    public Edge(T value, V from, V to) {
+        this.value = value;
+        this.from = from;
+        this.to = to;
+    }
 }

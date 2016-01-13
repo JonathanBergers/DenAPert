@@ -1,3 +1,5 @@
+import generic.Vertex;
+import implementation.VertexMilestone;
 import org.junit.Test;
 
 /**
@@ -10,7 +12,11 @@ public class PERTTest {
     public void testEarliest(){
 
 
-        assert false;
+//        VertexMilestone v1 = new VertexMilestone()
+
+
+
+
 
     }
 
