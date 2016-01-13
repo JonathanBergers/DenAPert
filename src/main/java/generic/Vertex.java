@@ -8,22 +8,43 @@ import java.util.List;
  */
 public abstract class Vertex<K, V> {
 
-    protected List<Edge> in = new ArrayList<>();
-    protected List<Edge> out = new ArrayList<>();
+
+    protected List<Edge> in;
+    protected List<Edge> out;
 
     protected K key;
     protected V value;
 
+    public List<Edge> getIn() {
+        return in;
+    }
 
-    public void addIncoming(Edge edge){
+    public List<Edge> getOut() {
+        return out;
+    }
+
+    public void addIncoming(Edge edge) {
         in.add(edge);
     }
-    public void addOutGoing(Edge edge){
+
+    public void addOutgoing(Edge edge) {
         out.add(edge);
     }
 
-    public Vertex(K key, V value) {
+    public K getKey() {
+        return key;
+    }
+
+    public void setKey(K key) {
         this.key = key;
+    }
+
+    public V getValue() {
+        return value;
+    }
+
+    public void setValue(V value) {
         this.value = value;
     }
+
 }

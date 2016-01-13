@@ -4,6 +4,7 @@ import generic.Edge;
 import generic.GenericGraph;
 import generic.Vertex;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -44,7 +45,11 @@ public class PERT extends GenericGraph<ActivityEdge, VertexMilestone> {
 
 
     private List<VertexMilestone> getBeginpoints(){
+        ArrayList<VertexMilestone> beginpoints = new ArrayList<VertexMilestone>();
+        for(VertexMilestone milestone : vertices ){
+            //check if the milestone is a begin point
 
+        }
         return null;
     }
 
