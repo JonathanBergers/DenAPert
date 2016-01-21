@@ -1,5 +1,7 @@
 package generic;
 
+import implementation.PERTVertexValues;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,11 +11,16 @@ import java.util.List;
 public abstract class Vertex<K, V> {
 
 
-    protected List<Edge> in;
-    protected List<Edge> out;
+    protected List<Edge> in = new ArrayList<Edge>();
+    protected List<Edge> out = new ArrayList<Edge>();
 
     protected K key;
     protected V value;
+
+    public Vertex(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
 
     public List<Edge> getIn() {
         return in;

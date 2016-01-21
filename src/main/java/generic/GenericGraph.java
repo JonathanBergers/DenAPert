@@ -13,4 +13,6 @@ public abstract class GenericGraph<E extends Edge, V extends Vertex> {
     protected List<E> edges = new ArrayList<E>();
 
 
+
+
 }

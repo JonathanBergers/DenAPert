@@ -14,4 +14,16 @@ public abstract class Edge<T, V extends Vertex> {
         this.from = from;
         this.to = to;
     }
+
+    public V getFrom(){
+        return from;
+    }
+
+    public V getTo(){
+        return to;
+    }
+
+    public T getValue(){
+        return value;
+    }
 }
